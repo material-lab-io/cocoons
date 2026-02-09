@@ -93,7 +93,7 @@ export default function Scorecard({ slug }: ScorecardProps) {
       {/* Map */}
       <NeighborhoodMap
         neighborhood={neighborhood}
-        score={overall_score.overall_score}
+        data={data}
       />
 
       {/* Category breakdown */}
