@@ -13,6 +13,7 @@
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.14",
+    "@tailwindcss/postcss": "^4.1.18",
     "leaflet": "^1.9.4",
     "next": "15.1.6",
     "react": "^19.0.0",
