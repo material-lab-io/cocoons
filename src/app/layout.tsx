@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Nav from "@/components/Nav";
+import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +23,13 @@ export default function RootLayout({
           crossOrigin=""
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Nav />
+        <div className="flex min-h-[calc(100vh-3.5rem)]">
+          <Sidebar />
+          <main className="flex-1 overflow-auto">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
